@@ -2,30 +2,30 @@ import React from "react";
 import "./Login1.css";
 import { Link } from "react-router-dom";
 
-const Form1 = () => {
+const Login1 = () => {
   return (
-    <div className="login1">
-      <div className="Login-container">
-        <div className="wrapper">
-          <div className="title">
+    <div className="login1-body">
+      <div className="login1-container">
+        <div className="login1-wrapper">
+          <div className="login1-title">
             <span>Login Form</span>
           </div>
-          <form action="#">
-            <div className="row">
+          <form action="#" className="login1-form">
+            <div className="login1-row">
               <i className="fas fa-user"></i>
-              <input type="text" placeholder="Email or Phone" required />
+              <input className="login1-input" type="text" placeholder="Email or Phone" required />
             </div>
-            <div className="row">
+            <div className="login1-row">
               <i className="fas fa-lock"></i>
-              <input type="password" placeholder="Password" required />
+              <input className="login1-input" type="password" placeholder="Password" required />
             </div>
-            <div className="pass">
+            <div className="login1-pass">
               <Link href="#">Forgot password?</Link>
             </div>
-            <div className="row button">
-              <input type="submit" value="Login" />
+            <div className="login1-row login1-button">
+              <input className="login1-input" type="submit" value="Login" />
             </div>
-            <div className="signup-link">
+            <div className="login1-signup-link">
               Not a member? <Link to="/forms/register1">Signup now</Link>
             </div>
           </form>
@@ -35,4 +35,4 @@ const Form1 = () => {
   );
 };
 
-export default Form1;
+export default Login1;

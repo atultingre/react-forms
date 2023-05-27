@@ -7,7 +7,7 @@
     font-family: 'Poppins', sans-serif;
 } */
 
-.login1 {
+.login1-body {
     overflow: hidden;
     background: #1abc9c;
 }
@@ -16,12 +16,14 @@
     background: rgba(26, 188, 156, 0.3);
 }
 
-.login-container {
-    max-width: 440px;
+.login1-container {
+    margin: auto;
+    height: 100vh;
+    /* max-width: 440px; */
     padding: 0 20px;
 }
 
-.wrapper {
+.login1-wrapper {
     margin:  50px auto;
     width: 50%;
     background: #fff;
@@ -29,7 +31,7 @@
     box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.1);
 }
 
-.wrapper .title {
+.login1-wrapper .login1-title {
     height: 90px;
     background: #16a085;
     border-radius: 5px 5px 0 0;
@@ -41,17 +43,17 @@
     justify-content: center;
 }
 
-.wrapper form {
+.login1-wrapper .login1-form {
     padding: 30px 25px 25px 25px;
 }
 
-.wrapper form .row {
+.login1-wrapper .login1-form .login1-row {
     height: 45px;
     margin-bottom: 15px;
     position: relative;
 }
 
-.wrapper form .row input {
+.login1-wrapper .login1-form .login1-row .login1-input {
     height: 100%;
     width: 100%;
     outline: none;
@@ -62,16 +64,16 @@
     transition: all 0.3s ease;
 }
 
-form .row input:focus {
+.login1-form .login1-row input:focus {
     border-color: #16a085;
     box-shadow: inset 0px 0px 2px 2px rgba(26, 188, 156, 0.25);
 }
 
-form .row input::placeholder {
+.login1-form .login1-row .login1-input::placeholder {
     color: #999;
 }
 
-.wrapper form .row i {
+.login1-wrapper .login1-form .login1-row i {
     position: absolute;
     width: 47px;
     height: 100%;
@@ -85,21 +87,21 @@ form .row input::placeholder {
     justify-content: center;
 }
 
-.wrapper form .pass {
+.login1-wrapper .login1-form .login1-pass {
     margin: -8px 0 20px 0;
 }
 
-.wrapper form .pass a {
+.login1-wrapper .login1-form .login1-pass a {
     color: #16a085;
     font-size: 17px;
     text-decoration: none;
 }
 
-.wrapper form .pass a:hover {
+.login1-wrapper .login1-form .login1-pass a:hover {
     text-decoration: underline;
 }
 
-.wrapper form .button input {
+.login1-wrapper .login1-form .login1-button .login1-input {
     color: #fff;
     font-size: 20px;
     font-weight: 500;
@@ -109,21 +111,21 @@ form .row input::placeholder {
     cursor: pointer;
 }
 
-form .button input:hover {
+.login1-form .login1-button .login1-input:hover {
     background: #12876f;
 }
 
-.wrapper form .signup-link {
+.login1-wrapper .login1-form .login1-signup-link {
     text-align: center;
     margin-top: 20px;
     font-size: 17px;
 }
 
-.wrapper form .signup-link a {
+.login1-wrapper .login1-form .login1-signup-link a {
     color: #16a085;
     text-decoration: none;
 }
 
-form .signup-link a:hover {
+.login1-form .login1-signup-link a:hover {
     text-decoration: underline;
 }
