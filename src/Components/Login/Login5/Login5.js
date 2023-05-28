@@ -8,8 +8,9 @@ const Login5 = () => {
   const handleCheckboxChange = () => {
     setIsChecked(!isChecked);
   };
+
   return (
-    <div className="login5-form">
+    <div className="login5-body">
       <div className="login5-container">
         <input
           type="checkbox"
@@ -17,7 +18,7 @@ const Login5 = () => {
           checked={isChecked}
           onChange={handleCheckboxChange}
         />
-        <div className="cover">
+        <div className="login5-cover">
           {isChecked ? (
             <div className="front">
               <img className="backImg" src="/images/backImg.jpg" alt="" />
@@ -26,13 +27,13 @@ const Login5 = () => {
               <img src="/images/frontImg.jpg" alt="" />
           )}
         </div>
-        <div className="forms">
-          <div className="form-content">
-            <div className="login-form">
-              <div className="title">Login</div>
+        <div className="login5-forms">
+          <div className="login5-form-content">
+            <div className="login5-form">
+              <div className="login5-title">Login</div>
               <form action="#">
-                <div className="input-boxes">
-                  <div className="input-box">
+                <div className="login5-input-boxes">
+                  <div className="login5-input-box">
                     <i className="fas fa-envelope"></i>
                     <input
                       type="text"
@@ -40,7 +41,7 @@ const Login5 = () => {
                       required
                     />
                   </div>
-                  <div className="input-box">
+                  <div className="login5-input-box">
                     <i className="fas fa-lock"></i>
                     <input
                       type="password"
@@ -48,13 +49,13 @@ const Login5 = () => {
                       required
                     />
                   </div>
-                  <div className="text">
+                  <div className="login5-text">
                     <Link to="#">Forgot password?</Link>
                   </div>
-                  <div className="button input-box">
+                  <div className="login5-button login5-input-box">
                     <input type="submit" value="Sumbit" />
                   </div>
-                  <div className="text sign-up-text">
+                  <div className="login5-text sign-up-text">
                     Don't have an account?<label for="flip">Sigup now</label>
                   </div>
                 </div>
@@ -62,14 +63,14 @@ const Login5 = () => {
             </div>
 
             <div className="signup-form">
-              <div className="title">Signup</div>
+              <div className="login5-title">Signup</div>
               <form action="#">
-                <div className="input-boxes">
-                  <div className="input-box">
+                <div className="login5-input-boxes">
+                  <div className="login5-input-box">
                     <i className="fas fa-user"></i>
                     <input type="text" placeholder="Enter your name" required />
                   </div>
-                  <div className="input-box">
+                  <div className="login5-input-box">
                     <i className="fas fa-envelope"></i>
                     <input
                       type="text"
@@ -77,7 +78,7 @@ const Login5 = () => {
                       required
                     />
                   </div>
-                  <div className="input-box">
+                  <div className="login5-input-box">
                     <i className="fas fa-lock"></i>
                     <input
                       type="password"
@@ -85,10 +86,10 @@ const Login5 = () => {
                       required
                     />
                   </div>
-                  <div className="button input-box">
+                  <div className="login5-button login5-input-box">
                     <input type="submit" value="Sumbit" />
                   </div>
-                  <div className="text sign-up-text">
+                  <div className="login5-text sign-up-text">
                     Already have an account? <label for="flip">Login now</label>
                   </div>
                 </div>

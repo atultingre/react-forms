@@ -7,7 +7,7 @@
   font-family: "Poppins" , sans-serif;
 } */
 
-.login5-form{
+.login5-body {
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -16,17 +16,18 @@
   padding: 30px;
 }
 
-.login5-container{
-    border-radius: 15px;
+.login5-container {
+  border-radius: 15px;
   position: relative;
   max-width: 850px;
   width: 100%;
   background: #fff;
   padding: 40px 30px;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   perspective: 2700px;
 }
-.login5-container .cover{
+
+.login5-container .login5-cover {
   position: absolute;
   top: 0;
   left: 50%;
@@ -36,24 +37,32 @@
   transition: all 1s ease;
   transform-origin: left;
   transform-style: preserve-3d;
+  border-radius: 0 15px 15px 0;
 }
-.login5-container #flip:checked ~ .cover{
+
+.login5-container #flip:checked~.login5-cover {
   transform: rotateY(-180deg);
+  border-radius: 0 15px 15px 0;
 }
- .login5-container .cover .front,
- .login5-container .cover .back{
+
+.login5-container .login5-cover .front,
+.login5-container .login5-cover .back {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
+  border-radius: 0 15px 15px 0;
 }
-.cover .back{
+
+.login5-cover .back {
+  border-radius: 0 15px 15px 0;
   transform: rotateY(180deg);
   backface-visibility: hidden;
 }
-.login5-container .cover::before,
-.login5-container .cover::after{
+
+.login5-container .login5-cover::before,
+.login5-container .login5-cover::after {
   content: '';
   position: absolute;
   height: 100%;
@@ -61,20 +70,26 @@
   background: #7d2ae8;
   opacity: 0.5;
   z-index: 12;
+  border-radius: 0 15px 15px 0;
 }
-.login5-container .cover::after{
+
+.login5-container .login5-cover::after {
   opacity: 0.3;
   transform: rotateY(180deg);
   backface-visibility: hidden;
+  border-radius: 0 15px 15px 0;
 }
-.login5-container .cover img{
+
+.login5-container .login5-cover img {
   position: absolute;
   height: 100%;
   width: 100%;
   object-fit: cover;
   z-index: 10;
+  border-radius: 0 15px 15px 0px;
 }
-.login5-container .cover .text{
+
+.login5-container .login5-cover .login5-text {
   position: absolute;
   z-index: 130;
   height: 100%;
@@ -84,39 +99,46 @@
   align-items: center;
   justify-content: center;
 }
-.cover .text .text-1,
-.cover .text .text-2{
+
+.login5-cover .login5-text .text-1,
+.login5-cover .login5-text .text-2 {
   font-size: 26px;
   font-weight: 600;
   color: #fff;
   text-align: center;
 }
-.cover .text .text-2{
+
+.login5-cover .login5-text .text-2 {
   font-size: 15px;
   font-weight: 500;
 }
-.login5-container .forms{
-    
-    height: 100%;
+
+.login5-container .login5-forms {
+
+  height: 100%;
   width: 100%;
   background: #fff;
 }
-.login5-container .form-content{
+
+.login5-container .login5-form-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.form-content .login-form,
-.form-content .signup-form{
+
+.login5-form-content .login5-form,
+.login5-form-content .signup-form {
   width: calc(100% / 2 - 25px);
 }
-.forms .form-content .title{
+
+.login5-forms .login5-form-content .login5-title {
   position: relative;
   font-size: 24px;
   font-weight: 500;
   color: #333;
 }
-.forms .form-content .title:before{
+
+.login5-forms .login5-form-content .login5-title:before {
   content: '';
   position: absolute;
   left: 0;
@@ -125,13 +147,16 @@
   width: 25px;
   background: #7d2ae8;
 }
-.forms .signup-form  .title:before{
+
+.login5-forms .signup-form .login5-title:before {
   width: 20px;
 }
-.forms .form-content .input-boxes{
+
+.login5-forms .login5-form-content .login5-input-boxes {
   margin-top: 30px;
 }
-.forms .form-content .input-box{
+
+.login5-forms .login5-form-content .login5-input-box {
   display: flex;
   align-items: center;
   height: 50px;
@@ -139,7 +164,8 @@
   margin: 10px 0;
   position: relative;
 }
-.form-content .input-box input{
+
+.login5-form-content .login5-input-box input {
   height: 100%;
   width: 100%;
   outline: none;
@@ -147,34 +173,44 @@
   padding: 0 30px;
   font-size: 16px;
   font-weight: 500;
-  border-bottom: 2px solid rgba(0,0,0,0.2);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 }
-.form-content .input-box input:focus,
-.form-content .input-box input:valid{
+
+.login5-form-content .login5-input-box input:focus,
+.login5-form-content .login5-input-box input:valid {
   border-color: #7d2ae8;
 }
-.form-content .input-box i{
+
+.login5-form-content .login5-input-box i {
+  margin-left: 10px;
+  gap: 5px;
   position: absolute;
   color: #7d2ae8;
   font-size: 17px;
 }
-.forms .form-content .text{
+
+.login5-forms .login5-form-content .login5-text {
   font-size: 14px;
   font-weight: 500;
   color: #333;
 }
-.forms .form-content .text a{
+
+.login5-forms .login5-form-content .login5-text a {
   text-decoration: none;
 }
-.forms .form-content .text a:hover{
+
+.login5-forms .login5-form-content .login5-text a:hover {
   text-decoration: underline;
 }
-.forms .form-content .button{
+
+.login5-forms .login5-form-content .login5-button {
   color: #fff;
   margin-top: 40px;
 }
-.forms .form-content .button input{
+
+.login5-forms .login5-form-content .login5-button input {
+  /* gap: 20px; */
   color: #fff;
   background: #7d2ae8;
   border-radius: 6px;
@@ -182,39 +218,49 @@
   cursor: pointer;
   transition: all 0.4s ease;
 }
-.forms .form-content .button input:hover{
+
+.login5-forms .login5-form-content .login5-button input:hover {
   background: #5b13b9;
 }
-.forms .form-content label{
+
+.login5-forms .login5-form-content label {
   color: #5b13b9;
   cursor: pointer;
 }
-.forms .form-content label:hover{
+
+.login5-forms .login5-form-content label:hover {
   text-decoration: underline;
 }
-.forms .form-content .login-text,
-.forms .form-content .sign-up-text{
+
+.login5-forms .login5-form-content .login-text,
+.login5-forms .login5-form-content .sign-up-text {
   text-align: center;
   margin-top: 25px;
 }
-.login5-container #flip{
+
+.login5-container #flip {
   display: none;
 }
+
 @media (max-width: 730px) {
-  .login5-container .cover{
+  .login5-container .login5-cover {
     display: none;
   }
-  .form-content .login-form,
-  .form-content .signup-form{
+
+  .login5-form-content .login5-form,
+  .login5-form-content .signup-form {
     width: 100%;
   }
-  .form-content .signup-form{
+
+  .login5-form-content .signup-form {
     display: none;
   }
-  .login5-container #flip:checked ~ .forms .signup-form{
+
+  .login5-container #flip:checked~.login5-forms .signup-form {
     display: block;
   }
-  .login5-container #flip:checked ~ .forms .login-form{
+
+  .login5-container #flip:checked~.login5-forms .login5-form {
     display: none;
   }
 }
