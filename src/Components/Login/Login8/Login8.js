@@ -4,26 +4,27 @@ import { Link } from 'react-router-dom'
 const Login8 = () => {
   return (
     <div className='login8-body'>
-         <div className="content">
-         <div className="text">
+         <div className="login8-content">
+         <div className="login8-text">
             Login Form
          </div>
-         <form action="#">
+         <form action="#" className='login8-form'>
             <div className="login8-field">
-               {/* <label>Email or Phone</label> */}
-               <input type="text" required placeholder='Email or Phone'/>
+               <label className='login8-label'>Email or Phone</label>
+               {/* placeholder='Email or Phone' */}
+               <input type="text" required />
                <span className="fas fa-user"></span>
             </div>
             <div className="login8-field">
-               {/* <label>Password</label> */}
-               <input type="password" required placeholder='Password'/>
+               <label className='login8-label'>Password</label>
+               <input type="password" required/>
                <span className="fas fa-lock"></span>
             </div>
-            <div className="forgot-pass">
+            <div className="login8-forgot-pass">
                <Link to="#">Forgot Password?</Link>
             </div>
             <button className='login8-button'>Sign in</button>
-            <div className="sign-up">
+            <div className="login8-sign-up">
                Not a member?
                <Link to="#">signup now</Link>
             </div>

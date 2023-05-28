@@ -16,7 +16,7 @@
     text-align: center;
 }
 
-.content {
+.login8-content {
     width: 330px;
     padding: 40px 30px;
     background: #dde1e7;
@@ -25,7 +25,7 @@
         2px 2px 5px rgba(94, 104, 121, 0.288);
 }
 
-.content .text {
+.login8-content .login8-text {
     font-size: 33px;
     font-weight: 600;
     margin-bottom: 35px;
@@ -70,7 +70,7 @@
     line-height: 50px;
 }
 
-.login8-field label {
+.login8-field .login8-label {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -79,23 +79,23 @@
     color: #666666;
 }
 
-.login8-field input:valid~label {
+.login8-field input:valid~.login8-label {
     opacity: 0;
 }
 
-.forgot-pass {
+.login8-forgot-pass {
     text-align: left;
     margin: 10px 5px 10px 5px;
 }
 
-.forgot-pass a {
+.login8-forgot-pass a {
     /* margin-top: 30px; */
     font-size: 16px;
     color: #3498db;
     text-decoration: none;
 }
 
-.forgot-pass:hover a {
+.login8-forgot-pass:hover a {
     text-decoration: underline;
 }
 
@@ -116,23 +116,23 @@
         -5px -5px 10px #ffffff73;
 }
 
-button:focus {
+.login8-button:focus {
     color: #3498db;
     box-shadow: inset 2px 2px 5px #BABECC,
         inset -5px -5px 10px #ffffff73;
 }
 
-.sign-up {
+.login8-sign-up {
     margin: 10px 0;
     color: #595959;
     font-size: 16px;
 }
 
-.sign-up a {
+.login8-sign-up a {
     color: #3498db;
     text-decoration: none;
 }
 
-.sign-up a:hover {
+.login8-sign-up a:hover {
     text-decoration: underline;
 }
