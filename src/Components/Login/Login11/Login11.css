@@ -100,20 +100,20 @@
     box-shadow: 0 1px 0 #ddd;
 }
 
-.login11-form .checkbox {
+.login11-form .login11-checkbox {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.checkbox .login11-input[type="checkbox"] {
+.login11-checkbox .login11-input[type="checkbox"] {
     height: 16px;
     width: 16px;
     accent-color: #fff;
     cursor: pointer;
 }
 
-.login11-form .checkbox label {
+.login11-form .login11-checkbox .login11-label {
     cursor: pointer;
     color: #fff;
 }
