@@ -6,15 +6,17 @@
   font-family: 'Poppins', sans-serif;
 } */
 .registration4-body {
-    display: flex;
-    /* align-items: center; */
-    /* justify-content: center; */
-    /* min-height: 100vh; */
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    min-height: 100vh;
     overflow: hidden;
-    background: -webkit-linear-gradient(bottom, #0250c5, #d43f8d);
+    background: url("/public/images/bg.jpg"),-webkit-linear-gradient(bottom, #0250c5, #d43f8d);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-/* url("bg.png"), */
+
 ::selection {
     color: #fff;
     background: #d43f8d;
@@ -29,34 +31,34 @@
     padding: 50px 35px 10px 35px;
 }
 
-.registration4-container header {
+.registration4-container .registration4-header {
     font-size: 35px;
     font-weight: 600;
     margin: 0 0 30px 0;
 }
 
-.registration4-container .form-outer {
+.registration4-container .registration4-form-outer {
     width: 100%;
     overflow: hidden;
 }
 
-.registration4-container .form-outer .registration4-form {
+.registration4-container .registration4-form-outer .registration4-form {
     display: flex;
     width: 400%;
 }
 
-.form-outer .registration4-form .page {
+.registration4-form-outer .registration4-form .registration4-page {
     width: 25%;
     transition: margin-left 0.3s ease-in-out;
 }
 
-.form-outer .registration4-form .page .title {
+.registration4-form-outer .registration4-form .registration4-page .registration4-title {
     text-align: left;
     font-size: 25px;
     font-weight: 500;
 }
 
-.form-outer .registration4-form .page .field {
+.registration4-form-outer .registration4-form .registration4-page .registration4-field {
     width: 330px;
     height: 45px;
     margin: 45px 0;
@@ -64,13 +66,13 @@
     position: relative;
 }
 
-.registration4-form .page .field .label {
+.registration4-form .registration4-page .registration4-field .registration4-label {
     position: absolute;
     top: -30px;
     font-weight: 500;
 }
 
-.registration4-form .page .field input {
+.registration4-form .registration4-page .registration4-field .registration4-input {
     height: 100%;
     width: 100%;
     border: 1px solid lightgrey;
@@ -79,14 +81,14 @@
     font-size: 18px;
 }
 
-.registration4-form .page .field select {
+.registration4-form .registration4-page .registration4-field select {
     width: 100%;
     padding-left: 10px;
     font-size: 17px;
     font-weight: 500;
 }
 
-.registration4-form .page .field button {
+.registration4-form .registration4-page .registration4-field button {
     width: 100%;
     height: calc(100% + 5px);
     border: none;
@@ -102,43 +104,43 @@
     transition: 0.5s ease;
 }
 
-.registration4-form .page .field button:hover {
+.registration4-form .registration4-page .registration4-field button:hover {
     background: #000;
 }
 
-.registration4-form .page .btns button {
+.registration4-form .registration4-page .btns button {
     margin-top: -20px !important;
 }
 
-.registration4-form .page .btns button.prev {
+.registration4-form .registration4-page .btns button.registration4-prev {
     margin-right: 3px;
     font-size: 17px;
 }
 
-.registration4-form .page .btns button.next {
+.registration4-form .registration4-page .btns button.registration4-next {
     margin-left: 3px;
 }
 
-.registration4-container .progress-bar {
+.registration4-container .registration4-progress-bar {
     display: flex;
     margin: 40px 0;
     user-select: none;
 }
 
-.registration4-container .progress-bar .step {
+.registration4-container .registration4-progress-bar .registration4-step {
     text-align: center;
     width: 100%;
     position: relative;
 }
 
-.registration4-container .progress-bar .step p {
+.registration4-container .registration4-progress-bar .registration4-step .registration4-p {
     font-weight: 500;
     font-size: 18px;
     color: #000;
     margin-bottom: 8px;
 }
 
-.progress-bar .step .bullet {
+.registration4-progress-bar .registration4-step .registration4-bullet {
     height: 25px;
     width: 25px;
     border: 2px solid #000;
@@ -151,23 +153,23 @@
     line-height: 25px;
 }
 
-.progress-bar .step .bullet.active {
+.registration4-progress-bar .registration4-step .registration4-bullet.active {
     border-color: #d43f8d;
     background: #d43f8d;
 }
 
-.progress-bar .step .bullet span {
+.registration4-progress-bar .registration4-step .registration4-bullet .registration4-span {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
 }
 
-.progress-bar .step .bullet.active span {
+.registration4-progress-bar .registration4-step .registration4-bullet.active .registration4-span {
     display: none;
 }
 
-.progress-bar .step .bullet:before,
-.progress-bar .step .bullet:after {
+.registration4-progress-bar .registration4-step .registration4-bullet:before,
+.registration4-progress-bar .registration4-step .registration4-bullet:after {
     position: absolute;
     content: '';
     bottom: 11px;
@@ -177,7 +179,7 @@
     background: #262626;
 }
 
-.progress-bar .step .bullet.active:after {
+.registration4-progress-bar .registration4-step .registration4-bullet.active:after {
     background: #d43f8d;
     transform: scaleX(0);
     transform-origin: left;
@@ -190,17 +192,17 @@
     }
 }
 
-.progress-bar .step:last-child .bullet:before,
-.progress-bar .step:last-child .bullet:after {
+.registration4-progress-bar .registration4-step:last-child .registration4-bullet:before,
+.registration4-progress-bar .registration4-step:last-child .registration4-bullet:after {
     display: none;
 }
 
-.progress-bar .step p.active {
+.registration4-progress-bar .registration4-step p.active {
     color: #d43f8d;
     transition: 0.2s linear;
 }
 
-.progress-bar .step .check {
+.registration4-progress-bar .registration4-step .registration4-check {
     position: absolute;
     left: 50%;
     top: 70%;
@@ -209,7 +211,7 @@
     display: none;
 }
 
-.progress-bar .step .check.active {
+.registration4-progress-bar .registration4-step .registration4-check.active {
     display: block;
     color: #fff;
 }

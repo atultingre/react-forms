@@ -3,17 +3,17 @@ import "./Registration4.css";
 
 const Registration4 = () => {
   useEffect(() => {
-    const slidePage = document.querySelector(".slide-page");
+    const slidePage = document.querySelector(".registration4-slide-page");
     const nextBtnFirst = document.querySelector(".firstNext");
     const prevBtnSec = document.querySelector(".prev-1");
     const nextBtnSec = document.querySelector(".next-1");
     const prevBtnThird = document.querySelector(".prev-2");
     const nextBtnThird = document.querySelector(".next-2");
     const prevBtnFourth = document.querySelector(".prev-3");
-    const submitBtn = document.querySelector(".submit");
-    const progressText = document.querySelectorAll(".step p");
-    const progressCheck = document.querySelectorAll(".step .check");
-    const bullet = document.querySelectorAll(".step .bullet");
+    const submitBtn = document.querySelector(".registration4-submit");
+    const progressText = document.querySelectorAll(".registration4-step p");
+    const progressCheck = document.querySelectorAll(".registration4-step .registration4-check");
+    const bullet = document.querySelectorAll(".registration4-step .registration4-bullet");
     let current = 1;
 
     nextBtnFirst.addEventListener("click", function (event) {
@@ -80,100 +80,100 @@ const Registration4 = () => {
   return (
     <div className="registration4-body">
       <div className="registration4-container">
-        <header>Signup Form</header>
-        <div className="progress-bar">
-          <div className="step">
-            <p>Name</p>
-            <div className="bullet">
-              <span>1</span>
+        <header className="registration4-header">Signup Form</header>
+        <div className="registration4-progress-bar">
+          <div className="registration4-step">
+            <p className="registration4-p">Name</p>
+            <div className="registration4-bullet">
+              <span className="registration4-span">1</span>
             </div>
-            <div className="check fas fa-check"></div>
-          </div>
-          <div className="step">
-            <p>Contact</p>
-            <div className="bullet">
-              <span>2</span>
-            </div>
-            <div className="check fas fa-check"></div>
-          </div>
-          <div className="step">
-            <p>Birth</p>
-            <div className="bullet">
-              <span>3</span>
-            </div>
-            <div className="check fas fa-check"></div>
+            <div className="registration4-check fas fa-check"></div>
           </div>
           <div className="registration4-step">
-            <p>Submit</p>
-            <div className="bullet">
-              <span>4</span>
+            <p className="registration4-p">Contact</p>
+            <div className="registration4-bullet">
+              <span className="registration4-span">2</span>
             </div>
-            <div className="check fas fa-check"></div>
+            <div className="registration4-check fas fa-check"></div>
+          </div>
+          <div className="registration4-step">
+            <p className="registration4-p">Birth</p>
+            <div className="registration4-bullet">
+              <span className="registration4-span">3</span>
+            </div>
+            <div className="registration4-check fas fa-check"></div>
+          </div>
+          <div className="registration4-step">
+            <p className="registration4-p">Submit</p>
+            <div className="registration4-bullet">
+              <span className="registration4-span">4</span>
+            </div>
+            <div className="registration4-check fas fa-check"></div>
           </div>
         </div>
-        <div className="form-outer">
+        <div className="registration4-form-outer">
           <form action="#" className="registration4-form">
-            <div className="page slide-page">
-              <div className="title">Basic Info:</div>
-              <div className="field">
-                <div className="label">First Name</div>
-                <input type="text" />
+            <div className="registration4-page registration4-slide-page">
+              <div className="registration4-title">Basic Info:</div>
+              <div className="registration4-field">
+                <div className="registration4-label">First Name</div>
+                <input className="registration4-input" type="text" />
               </div>
-              <div className="field">
-                <div className="label">Last Name</div>
-                <input type="text" />
+              <div className="registration4-field">
+                <div className="registration4-label">Last Name</div>
+                <input className="registration4-input" type="text" />
               </div>
-              <div className="field">
-                <button className="firstNext next">Next</button>
-              </div>
-            </div>
-            <div className="page">
-              <div className="title">Contact Info:</div>
-              <div className="field">
-                <div className="label">Email Address</div>
-                <input type="text" />
-              </div>
-              <div className="field">
-                <div className="label">Phone Number</div>
-                <input type="Number" />
-              </div>
-              <div className="field btns">
-                <button className="prev-1 prev">Previous</button>
-                <button className="next-1 next">Next</button>
+              <div className="registration4-field">
+                <button className="firstNext registration4-next">Next</button>
               </div>
             </div>
-            <div className="page">
-              <div className="title">Date of Birth:</div>
-              <div className="field">
-                <div className="label">Date</div>
-                <input type="text" />
+            <div className="registration4-page">
+              <div className="registration4-title">Contact Info:</div>
+              <div className="registration4-field">
+                <div className="registration4-label">Email Address</div>
+                <input className="registration4-input" type="text" />
               </div>
-              <div className="field">
-                <div className="label">Gender</div>
+              <div className="registration4-field">
+                <div className="registration4-label">Phone Number</div>
+                <input className="registration4-input" type="Number" />
+              </div>
+              <div className="registration4-field btns">
+                <button className="prev-1 registration4-prev">Previous</button>
+                <button className="next-1 registration4-next">Next</button>
+              </div>
+            </div>
+            <div className="registration4-page">
+              <div className="registration4-title">Date of Birth:</div>
+              <div className="registration4-field">
+                <div className="registration4-label">Date</div>
+                <input className="registration4-input" type="text" />
+              </div>
+              <div className="registration4-field">
+                <div className="registration4-label">Gender</div>
                 <select>
                   <option>Male</option>
                   <option>Female</option>
                   <option>Other</option>
                 </select>
               </div>
-              <div className="field btns">
-                <button className="prev-2 prev">Previous</button>
-                <button className="next-2 next">Next</button>
+              <div className="registration4-field btns">
+                <button className="prev-2 registration4-prev">Previous</button>
+                <button className="next-2 registration4-next">Next</button>
               </div>
             </div>
-            <div className="page">
-              <div className="title">Login Details:</div>
-              <div className="field">
-                <div className="label">Username</div>
-                <input type="text" />
+            <div className="registration4-page">
+              <div className="registration4-title">Login Details:</div>
+              <div className="registration4-field">
+                <div className="registration4-label">Username</div>
+                <input className="registration4-input" type="text" />
               </div>
-              <div className="field">
-                <div className="label">Password</div>
-                <input type="password" />
+              <div className="registration4-field">
+                <div className="registration4-label">Password</div>
+                <input className="registration4-input" type="password" />
               </div>
-              <div className="field btns">
-                <button className="prev-3 prev">Previous</button>
-                <button className="submit">Submit</button>
+              <div className="registration4-field btns">
+                <button className="prev-3 registration4-prev">Previous</button>
+                <button className="registration4-submit">Submit</button>
               </div>
             </div>
           </form>
