@@ -1,7 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import NavBar from "./Components/NavBar/NavBar";
-import Layout from "./Components/Layout/Layout";
 import Login1 from "./Components/Login/Login1/Login1";
 import Login2 from "./Components/Login/Login2/Login2";
 import Login3 from "./Components/Login/Login3/Login3";
@@ -21,32 +20,32 @@ import Registration6 from "./Components/Registration/Registration6/Registration6
 import Login11 from "./Components/Login/Login11/Login11";
 import Login12 from "./Components/Login/Login12/Login12";
 import Login13 from "./Components/Login/Login13/Login13";
+import Login14 from "./Components/Login/Login14/Login14";
 function App() {
   return (
     <div>
       <NavBar />
       <Routes>
-        <Route exact path="/" element={<Layout />}>
-          <Route exact path="/login1" element={<Login1 />} />
-          <Route exact path="/login2" element={<Login2 />} />
-          <Route exact path="/login3" element={<Login3 />} />
-          <Route exact path="/login4" element={<Login4/>}/>
-          <Route exact path="/login5" element={<Login5 />} />
-          <Route exact path="/login6" element={<Login6 />} />
-          <Route exact path="/login7" element={<Login7 />} />
-          <Route exact path="/login8" element={<Login8 />} />
-          <Route exact path="/login9" element={<Login9 />} />
-          <Route exact path="/login10" element={<Login10 />} />
-          <Route exact path="/login11" element={<Login11 />} />
-          <Route exact path="/login12" element={<Login12 />} />
-          <Route exact path="/login13" element={<Login13 />} />
-          <Route exact path="/register1" element={<Registration1 />} />
-          <Route exact path="/register2" element={<Registration2 />} />
-          <Route exact path="/register3" element={<Registration3 />} />
-          <Route exact path="/register4" element={<Registration4 />} />
-          <Route exact path="/register5" element={<Registration5/>}/>
-          <Route exact path="/register6" element={<Registration6/>}/>
-        </Route>
+        <Route exact path="/" element={<Login1 />} />
+        <Route exact path="/login2" element={<Login2 />} />
+        <Route exact path="/login3" element={<Login3 />} />
+        <Route exact path="/login4" element={<Login4 />} />
+        <Route exact path="/login5" element={<Login5 />} />
+        <Route exact path="/login6" element={<Login6 />} />
+        <Route exact path="/login7" element={<Login7 />} />
+        <Route exact path="/login8" element={<Login8 />} />
+        <Route exact path="/login9" element={<Login9 />} />
+        <Route exact path="/login10" element={<Login10 />} />
+        <Route exact path="/login11" element={<Login11 />} />
+        <Route exact path="/login12" element={<Login12 />} />
+        <Route exact path="/login13" element={<Login13 />} />
+        <Route exact path="/login14" element={<Login14 />} />
+        <Route exact path="/register1" element={<Registration1 />} />
+        <Route exact path="/register2" element={<Registration2 />} />
+        <Route exact path="/register3" element={<Registration3 />} />
+        <Route exact path="/register4" element={<Registration4 />} />
+        <Route exact path="/register5" element={<Registration5 />} />
+        <Route exact path="/register6" element={<Registration6 />} />
       </Routes>
     </div>
   );

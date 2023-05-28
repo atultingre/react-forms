@@ -7,7 +7,7 @@ const NavBar = () => {
       <nav className="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
         <div className="container-fluid">
           <Link className="navbar-brand" to="#">
-            Navbar
+            React Forms
           </Link>
           <button
             className="navbar-toggler"
@@ -23,7 +23,7 @@ const NavBar = () => {
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item dropdown">
                 <Link
-                  className="nav-link dropdown-toggle"
+                  className="nav-link dropdown-toggle "
                   to="#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -31,7 +31,7 @@ const NavBar = () => {
                   Login
                 </Link>
                 <ul className="dropdown-menu">
-                  <li><Link className="dropdown-item" to="/login1">Login1</Link></li>
+                  <li><Link className="dropdown-item" to="/">Login1</Link></li>
                   <hr className="dropdown-divider" />
                   <li><Link className="dropdown-item" to="/login2">Login2</Link> </li>
                   <hr className="dropdown-divider" />
@@ -58,10 +58,10 @@ const NavBar = () => {
                   <li><Link className="dropdown-item" to="/login13">Login13</Link></li>
                   <hr className="dropdown-divider" />
                   <li><Link className="dropdown-item" to="/login14">Login14</Link></li>
+                  {/* <hr className="dropdown-divider" /> */}
+                  {/* <li><Link className="dropdown-item" to="/login15">Login15</Link></li>
                   <hr className="dropdown-divider" />
-                  <li><Link className="dropdown-item" to="/login15">Login15</Link></li>
-                  <hr className="dropdown-divider" />
-                  <li><Link className="dropdown-item" to="/login16">Login16</Link></li>
+                  <li><Link className="dropdown-item" to="/login16">Login16</Link></li> */}
                 </ul>
               </li>
               <li className="nav-item dropdown">
@@ -71,7 +71,7 @@ const NavBar = () => {
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false">
-                  Register
+                  Registration
                 </Link>
                 <ul className="dropdown-menu">
                   <li><Link className="dropdown-item" to="/register1">Refister1</Link></li>
@@ -85,7 +85,7 @@ const NavBar = () => {
                   <li><Link className="dropdown-item" to="/register5">Register5</Link></li>
                   <hr className="dropdown-divider" />
                   <li><Link className="dropdown-item" to="/register6">Register6</Link></li>
-                  <hr className="dropdown-divider" />
+                  {/* <hr className="dropdown-divider" />
                   <li><Link className="dropdown-item" to="/register7">Register7</Link></li>
                   <hr className="dropdown-divider" />
                   <li><Link className="dropdown-item" to="/register8">Register8</Link></li>
@@ -98,7 +98,7 @@ const NavBar = () => {
                   <hr className="dropdown-divider" />
                   <li><Link className="dropdown-item" to="/register12">Register12</Link></li>
                   <hr className="dropdown-divider" />
-                  <li><Link className="dropdown-item" to="/register13">Register13</Link></li>
+                  <li><Link className="dropdown-item" to="/register13">Register13</Link></li> */}
                 </ul>
               </li>
             </ul>
