@@ -11,19 +11,24 @@ const Login9 = () => {
 
   return (
     <div>
-      <div className="bg-img">
+      <div className="login9-body">
         <div className="login9-content">
-          <header>Login Form</header>
-          <form action="#">
+          <header className="login9-header">Login Form</header>
+          <form action="#" className="login9-form">
             <div className="login9-field">
               <span className="fa fa-user"></span>
-              <input type="text" required placeholder="Email or Phone" />
+              <input
+                className="login9-input"
+                type="text"
+                required
+                placeholder="Email or Phone"
+              />
             </div>
             <div className="login9-field space">
-              <span className="fa fa-lock"></span>
+              <span className="fa fa-lock span"></span>
               <input
                 type={passwordVisible ? "text" : "password"}
-                className="pass-key"
+                className="pass-key login9-input"
                 required
                 placeholder="Password"
               />
@@ -31,27 +36,27 @@ const Login9 = () => {
                 {passwordVisible ? "HIDE" : "SHOW"}
               </span>
             </div>
-            <div className="pass">
+            <div className="login9-pass">
               <Link to="#">Forgot Password?</Link>
             </div>
             <div className="login9-field">
-              <input type="submit" value="LOGIN" />
+              <input className="login9-submit" type="submit" value="LOGIN" />
             </div>
           </form>
-          <div className="login">Or login with</div>
-          <div className="links">
-            <div className="facebook">
+          <div className="login9-login">Or login with</div>
+          <div className="login9-links">
+            <div className="login9-facebook">
               <i className="fab fa-facebook-f">
                 <span>Facebook</span>
               </i>
             </div>
-            <div className="instagram">
+            <div className="login9-instagram">
               <i className="fab fa-instagram">
                 <span>Instagram</span>
               </i>
             </div>
           </div>
-          <div className="signup">
+          <div className="login9-signup">
             Don't have an account?
             <Link to="#">Signup Now</Link>
           </div>
