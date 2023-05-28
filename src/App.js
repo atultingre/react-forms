@@ -20,6 +20,7 @@ import Login10 from "./Components/Login/Login10/Login10";
 import Registration6 from "./Components/Registration/Registration6/Registration6";
 import Login11 from "./Components/Login/Login11/Login11";
 import Login12 from "./Components/Login/Login12/Login12";
+import Login13 from "./Components/Login/Login13/Login13";
 function App() {
   return (
     <div>
@@ -38,6 +39,7 @@ function App() {
           <Route exact path="/login10" element={<Login10 />} />
           <Route exact path="/login11" element={<Login11 />} />
           <Route exact path="/login12" element={<Login12 />} />
+          <Route exact path="/login13" element={<Login13 />} />
           <Route exact path="/register1" element={<Registration1 />} />
           <Route exact path="/register2" element={<Registration2 />} />
           <Route exact path="/register3" element={<Registration3 />} />
