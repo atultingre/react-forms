@@ -23,7 +23,7 @@
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
-.registration6-container header {
+.registration6-container .registration6-header {
   font-size: 1.5rem;
   color: #333;
   font-weight: 500;
@@ -32,16 +32,16 @@
 .registration6-container .registration6-form {
   margin-top: 30px;
 }
-.registration6-form .input-box {
+.registration6-form .registration6-input-box {
     margin-bottom: 5px;
   width: 100%;
   margin-top: 20px;
 }
-.input-box .registration6-label {
+.registration6-input-box .registration6-label {
     /* margin-top: 10px; */
   color: #333;
 }
-.registration6-form :where(.input-box .registration6-input, .select-box) {
+.registration6-form :where(.registration6-input-box .registration6-input, .registration6-select-box) {
   position: relative;
   height: 50px;
   width: 100%;
@@ -53,44 +53,46 @@
   border-radius: 6px;
   padding: 0 15px;
 }
-.input-box input:focus {
+.registration6-input-box input:focus {
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
 }
-.registration6-form .column {
+.registration6-form .registration6-column {
   display: flex;
   column-gap: 15px;
 }
-.registration6-form .gender-box {
+.registration6-form .registration6-gender-box {
   margin-top: 40px;
 }
-.gender-box h3 {
+.registration6-gender-box .registration6-h3 {
   color: #333;
   font-size: 1rem;
   font-weight: 400;
   margin-bottom: 8px;
 }
-.registration6-form :where(.gender-option, .gender) {
+.registration6-form :where(.gender-option, .registration6-gender) {
   display: flex;
   align-items: center;
   column-gap: 50px;
   flex-wrap: wrap;
 }
-.registration6-form .gender {
+.registration6-form .registration6-gender {
   column-gap: 5px;
 }
-.gender .registration6-input {
+.registration6-gender .registration6-input {
   accent-color: rgb(130, 106, 251);
 }
-.registration6-form :where(.gender .registration6-input, .gender .registration6-label) {
+.registration6-form :where(.registration6-gender .registration6-input, .registration6-gender .registration6-label) {
   cursor: pointer;
 }
-.gender .registration6-label {
+.registration6-gender .registration6-label {
   color: #707070;
 }
-.address :where(.registration6-input, .select-box) {
+.registration6-address :where(.registration6-input, .registration6-select-box) {
   margin-top: 15px;
 }
-.select-box select {
+.registration6-select-box select {
+  margin: 0;
+  padding: 0;
   height: 100%;
   width: 100%;
   outline: none;
@@ -115,10 +117,10 @@
 }
 /*Responsive*/
 @media screen and (max-width: 500px) {
-  .registration6-form .column {
+  .registration6-form .registration6-column {
     flex-wrap: wrap;
   }
-  .registration6-form :where(.gender-option, .gender) {
+  .registration6-form :where(.gender-option, .registration6-gender) {
     row-gap: 15px;
   }
 }
