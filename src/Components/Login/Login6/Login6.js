@@ -1,37 +1,40 @@
 import React from "react";
-import "./Login6.css"
+import "./Login6.css";
 import { Link } from "react-router-dom";
 const Login6 = () => {
   return (
     <div className="login6-body">
-      <div className="center">
-        <input type="checkbox" id="show" />
-        <label for="show" className="show-btn">
+      <div className="login6-center">
+        <input className="login6-input" type="checkbox" id="show" />
+        <label for="show" className="login6-show-btn">
           View Form
         </label>
         <div className="login6-container">
           <label
             for="show"
-            className="close-btn fas fa-times"
+            className="login6-close-btn fas fa-times"
             title="close"></label>
-          <div className="text">Login Form</div>
-          <form action="#">
-            <div className="data">
-              <label>Email or Phone</label>
-              <input type="text" required />
+          <div className="login6-text">Login Form</div>
+          <form action="#" className="login6-form">
+            <div className="login6-data">
+              <label className="login6-label">Email or Phone</label>
+              <input className="login6-input" type="text" required />
             </div>
-            <div className="data">
-              <label>Password</label>
-              <input type="password" required />
+            <div className="login6-data">
+              <label className="login6-label">Password</label>
+              <input className="login6-input" type="password" required />
             </div>
-            <div className="forgot-pass">
+            <div className="login6-forgot-pass">
               <Link to="#">Forgot Password?</Link>
             </div>
-            <div className="btn">
-              <div className="inner"></div>
-              <button type="submit">login</button>
+            <div className="login6-btn"> 
+              <div className="login6-inner">
+                <button type="submit" className="login6-button">
+                  login
+                </button>
+              </div>
             </div>
-            <div className="signup-link">
+            <div className="login6-signup-link">
               Not a member? <Link to="#">Signup now</Link>
             </div>
           </form>
