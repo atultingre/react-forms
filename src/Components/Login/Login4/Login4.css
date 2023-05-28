@@ -18,7 +18,7 @@
     column-gap: 30px;
 }
 
-.form {
+.login4-form {
     position: absolute;
     max-width: 430px;
     width: 100%;
@@ -27,17 +27,17 @@
     background: #FFF;
 }
 
-.form.signup {
+.login4-form.signup {
     opacity: 0;
     pointer-events: none;
 }
 
-.forms.show-signup .form.signup {
+.login4-forms.show-signup .login4-form.signup {
     opacity: 1;
     pointer-events: auto;
 }
 
-.forms.show-signup .form.login {
+.login4-forms.show-signup .login4-form.login4-login {
     opacity: 0;
     pointer-events: none;
 }
@@ -53,7 +53,7 @@ form {
     margin-top: 30px;
 }
 
-.form .field {
+.login4-form .login4-field {
     position: relative;
     height: 50px;
     width: 100%;
@@ -61,8 +61,8 @@ form {
     border-radius: 6px;
 }
 
-.field input,
-.field button {
+.login4-field .input,
+.login4-field .login4-button {
     height: 100%;
     width: 100%;
     border: none;
@@ -71,13 +71,13 @@ form {
     border-radius: 6px;
 }
 
-.field input {
+.login4-field .input {
     outline: none;
     padding: 0 15px;
     border: 1px solid#CACACA;
 }
 
-.field input:focus {
+.login4-field .input:focus {
     border-bottom-width: 2px;
 }
 
@@ -92,39 +92,39 @@ form {
     padding: 5px;
 }
 
-.field button {
+.login4-field .login4-button {
     color: #fff;
     background-color: #0171d3;
     transition: all 0.3s ease;
     cursor: pointer;
 }
 
-.field button:hover {
+.login4-field .login4-button:hover {
     background-color: #016dcb;
 }
 
-.form-link {
+.login4-form-link {
     text-align: center;
     margin-top: 10px;
 }
 
-.form-link span,
-.form-link a {
+.login4-form-link span,
+.login4-form-link a {
     font-size: 14px;
     font-weight: 400;
     color: #232836;
 }
 
-.form a {
+.login4-form a {
     color: #0171d3;
     text-decoration: none;
 }
 
-.form-content a:hover {
+.login4-form-content a:hover {
     text-decoration: underline;
 }
 
-.line {
+.login4-line {
     position: relative;
     height: 1px;
     width: 100%;
@@ -132,7 +132,7 @@ form {
     background-color: #d4d4d4;
 }
 
-.line::before {
+.login4-line::before {
     content: 'Or';
     position: absolute;
     top: 50%;
@@ -167,14 +167,14 @@ a.facebook .facebook-icon {
 }
 
 .facebook-icon,
-img.google-img {
+.google-icon {
     position: absolute;
     top: 50%;
     left: 15px;
     transform: translateY(-50%);
 }
 
-img.google-img {
+.google-icon {
     height: 20px;
     width: 20px;
     object-fit: cover;
@@ -191,7 +191,7 @@ a.google span {
 }
 
 @media screen and (max-width: 400px) {
-    .form {
+    .login4-form {
         padding: 20px 10px;
     }
 

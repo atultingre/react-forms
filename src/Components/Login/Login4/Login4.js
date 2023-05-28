@@ -4,77 +4,84 @@ import { Link } from "react-router-dom";
 
 const Login4 = () => {
   const pwShowHide = document.querySelectorAll(".eye-icon");
-    const links = document.querySelectorAll(".link");
+  const links = document.querySelectorAll(".link");
 
-    pwShowHide.forEach((eyeIcon) => {
-      eyeIcon.addEventListener("click", () => {
-        let pwFields = eyeIcon.parentElement.parentElement.querySelectorAll(".password");
+  pwShowHide.forEach((eyeIcon) => {
+    eyeIcon.addEventListener("click", () => {
+      let pwFields =
+        eyeIcon.parentElement.parentElement.querySelectorAll(".password");
 
-        pwFields.forEach((password) => {
-          if (password.type === "password") {
-            password.type = "text";
-            eyeIcon.classList.replace("bx-hide", "bx-show");
-            return;
-          }
-          password.type = "password";
-          eyeIcon.classList.replace("bx-show", "bx-hide");
-        });
+      pwFields.forEach((password) => {
+        if (password.type === "password") {
+          password.type = "text";
+          eyeIcon.classList.replace("bx-hide", "bx-show");
+          return;
+        }
+        password.type = "password";
+        eyeIcon.classList.replace("bx-show", "bx-hide");
       });
     });
+  });
 
-    links.forEach((link) => {
-      link.addEventListener("click", (e) => {
-        e.preventDefault();
-        document.querySelector(".forms").classList.toggle("show-signup");
-      });
+  links.forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      document.querySelector(".forms").classList.toggle("show-signup");
     });
+  });
   return (
     <>
-      <div className="login4-form">
-        <section className="login4-container forms">
-          <div className="form login">
-            <div className="form-content">
+      <div>
+        <section className="login4-container login4-forms">
+          <div className="login4-form login4-login">
+            <div className="login4-form-content">
               <header>Login</header>
               <form action="#">
-                <div className="field input-field">
-                  <input type="email" placeholder="Email" className="input" />
+                <div className="login4-field login4-input-field">
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    className="login4-input input"
+                  />
                 </div>
-                <div className="field input-field">
+                <div className="login4-field login4-input-field">
                   <input
                     type="password"
                     placeholder="Password"
-                    className="password"
+                    className="login4-password input"
                   />
                   <i className="bx bx-hide eye-icon"></i>
                 </div>
-                <div className="form-link">
-                  <Link to="#" className="forgot-pass">
+                <div className="login4-form-link">
+                  <Link to="#" className="login4-forgot-pass">
                     Forgot password?
                   </Link>
                 </div>
-                <div className="field button-field">
-                  <button>Login</button>
+                <div className="login4-field login4-button-field">
+                  <button className="login4-button">Login</button>
                 </div>
               </form>
-              <div className="form-link">
+              <div className="login4-form-link">
                 <span>
-                  Don't have an account?{" "}
-                  <Link to="/register5" className="link signup-link">
+                  Don't have an account?
+                  <Link
+                    to="/register5"
+                    className="login4-link login4-signup-link">
                     Signup
                   </Link>
                 </span>
               </div>
             </div>
-            <div className="line"></div>
+            <div className="login4-line"></div>
             <div className="media-options">
-              <Link to="#" className="field facebook">
+              <Link to="#" className="login4-field facebook">
                 <i className="bx bxl-facebook facebook-icon"></i>
                 <span>Login with Facebook</span>
               </Link>
             </div>
-            <div className="media-options">
-              <Link to="#" className="field google">
-                <img src="#" alt="" className="google-img" />
+            <div className="media-options ">
+              <Link to="#" className="login4-field google">
+                <i className="bx bxl-google facebook-icon"></i>
                 <span>Login with Google</span>
               </Link>
             </div>
