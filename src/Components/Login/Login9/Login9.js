@@ -57,8 +57,8 @@ const Login9 = () => {
             </div>
           </div>
           <div className="login9-signup">
-            Don't have an account?
-            <Link to="#">Signup Now</Link>
+            Don't have an account? 
+            <Link to="#"> Signup Now</Link>
           </div>
         </div>
       </div>

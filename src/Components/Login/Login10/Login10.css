@@ -25,7 +25,7 @@
   text-align: center;
   box-shadow: 10px 10px 15px rgba(0,0,0,0.1);
 }
-.login10-wrapper header{
+.login10-wrapper .login10-header{
   font-size: 35px;
   font-weight: 600;
 }
@@ -50,12 +50,12 @@
     margin-left: 12px;
   }
 }
-.login10-form .login10-field .input-area{
+.login10-form .login10-field .login10-input-area{
   height: 50px;
   width: 100%;
   position: relative;
 }
-.login10-form input{
+.login10-form .login10-input{
   width: 100%;
   height: 100%;
   outline: none;
@@ -68,39 +68,39 @@
   border-bottom-width: 2px;
   transition: all 0.2s ease;
 }
-.login10-form .login10-field input:focus,
-.login10-form .login10-field.valid input{
+.login10-form .login10-field .login10-input:focus,
+.login10-form .login10-field.valid .login10-input{
   border-color: #5372F0;
 }
-.login10-form .login10-field.shake input,
-.login10-form .login10-field.error input{
+.login10-form .login10-field.shake .login10-input,
+.login10-form .login10-field.error .login10-input{
   border-color: #dc3545;
 }
-.login10-field .input-area i{
+.login10-field .login10-input-area i{
   position: absolute;
   top: 50%;
   font-size: 18px;
   pointer-events: none;
-  trans.login10-form: translateY(-50%);
+  transform: translateY(-50%);
 }
-.input-area .icon{
+.login10-input-area .icon{
   left: 15px;
   color: #bfbfbf;
   transition: color 0.2s ease;
 }
-.input-area .error-icon{
+.login10-input-area .error-icon{
   right: 15px;
   color: #dc3545;
 }
-.login10-form input:focus ~ .icon,
+.login10-form .login10-input:focus ~ .icon,
 .login10-form .login10-field.valid .icon{
   color: #5372F0;
 }
-.login10-form .login10-field.shake input:focus ~ .icon,
-.login10-form .login10-field.error input:focus ~ .icon{
+.login10-form .login10-field.shake .login10-input:focus ~ .icon,
+.login10-form .login10-field.error .login10-input:focus ~ .icon{
   color: #bfbfbf;
 }
-.login10-form input::placeholder{
+.login10-form .login10-input::placeholder{
   color: #bfbfbf;
   font-size: 17px;
 }
@@ -116,7 +116,7 @@
 .login10-form .login10-field.error .error{
   display: block;
 }
-.login10-form .pass-txt{
+.login10-form .login10-pass-txt{
   text-align: left;
   margin-top: -10px;
 }
@@ -127,7 +127,7 @@
 .login10-wrapper a:hover{
   text-decoration: underline;
 }
-.login10-form input[type="submit"]{
+.login10-form .login10-input[type="submit"]{
   height: 50px;
   margin-top: 30px;
   color: #fff;
@@ -138,6 +138,6 @@
   border-bottom: 2px solid rgba(0,0,0,0.1);
   transition: all 0.3s ease;
 }
-.login10-form input[type="submit"]:hover{
+.login10-form .login10-input[type="submit"]:hover{
   background: #2c52ed;
 }
