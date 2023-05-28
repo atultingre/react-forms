@@ -31,7 +31,7 @@ const NavBar = () => {
                   Login
                 </Link>
                 <ul className="dropdown-menu">
-                  <li><Link className="dropdown-item" to="/">Login1</Link></li>
+                  <li><Link className="dropdown-item" to="/login1">Login1</Link></li>
                   <hr className="dropdown-divider" />
                   <li><Link className="dropdown-item" to="/login2">Login2</Link> </li>
                   <hr className="dropdown-divider" />
@@ -43,7 +43,7 @@ const NavBar = () => {
                   <hr className="dropdown-divider" />
                   <li><Link className="dropdown-item" to="/login6">Login6</Link></li>
                   <hr className="dropdown-divider" />
-                  <li><Link className="dropdown-item" to="/login7">Login7</Link></li>
+                  <li><Link className="dropdown-item" to="/">Login7</Link></li>
                   <hr className="dropdown-divider" />
                   <li><Link className="dropdown-item" to="/login8">Login8</Link></li>
                   <hr className="dropdown-divider" />
